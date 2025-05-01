@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desafio 3</title>
+  <link href="./css/style.css" rel="stylesheet">
+  <script src="scripts/particles.js"></script>
+  <script defer src="scripts/app.js"></script>
+</head>
+
+<body class="overflow-x-hidden">
+  <header id="main-header"
+    class="flex items-center justify-between px-4 sm:px-8 md:px-16 lg:px-32 xl:px-56 py-4 bg-base shadow-md">
+    <div id="header-particles" class="absolute left-0 right-0"></div>
+    <div class="flex items-center z-10 hidden-anim-l">
+      <img src="images/udb_logo.svg" alt="Logo" class="hidden h-15 sm:block w-auto" />
+      <img src="images/udb_logo_mini.svg" alt="Logo" class="block sm:hidden h-15 w-auto" />
+    </div>
+
+    <div class="text-right space-y-1 z-10">
+      <p class="text-sm sm:text-lg font-semibold text-gray-200 hidden-anim-r">Servidores en Plataformas Libres</p>
+      <p class="text-xs sm:text-sm text-gray-300 hidden-anim-r">Facultad de ingenieria</p>
+    </div>
+  </header>
+
+  <div id="hero-container" class="relative overflow-hidden">
+    <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover">
+      <source src="videos/hero.mp4" type="video/mp4" />
+    </video>
+
+    <button id="scroll-down-btn"
+      class="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce text-white cursor-pointer transition-transform hover:scale-125">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+  </div>
+  <script src="particles.js"></script>
+
+  <main id="page-content">
+    <section id="page-content" class="bg-white py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-extrabold text-base hidden-anim-l">Bienvenido</h2>
+        <p class="mt-4 text-lg text-base hidden-anim-l">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </section>
+    <section class="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto text-center">
+        <h3 class="text-2xl font-semibold text-base hidden-anim-l">Texto aqui</h3>
+        <p class="mt-4 text-base hidden-anim-l">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum.</p>
+        <ul class="mt-6 text-left max-w-md mx-auto space-y-3 text-base">
+          <li class="hidden-anim-l">- Texto 1 aqui</li>
+          <li class="hidden-anim-l">- Texto 2 aqui</li>
+          <li class="hidden-anim-l">- Texto 3 aqui</li>
+        </ul>
+      </div>
+    </section>
+    <section class="bg-white py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-2xl sm:text-3xl font-semibold text-center text-base mb-10 hidden-anim-l">Nuestro equipo</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="card hidden-anim-l">
+            <div class="bg-gray-100 rounded-xl shadow p-6 hover:shadow-lg transition">
+              <img src="https://avatars.githubusercontent.com/u/114553212?v=4"
+                class="mx-auto rounded-full w-44 h-44 object-cover mb-4">
+              <h4 class="text-xl font-semibold text-base">Tomás Campos</h4>
+              <p class="text-base-alt">CL231461</p>
+            </div>
+          </div>
+          <div class="card hidden-anim-l">
+            <div class="bg-gray-100 rounded-xl shadow p-6 hover:shadow-lg transition">
+              <img src="images/member2.jpg" class="mx-auto rounded-full w-44 h-44 object-cover mb-4">
+              <h4 class="text-xl font-semibold text-base">Fernando Carrillo</h4>
+              <p class="text-base-alt">CA232705</p>
+            </div>
+          </div>
+          <div class="card hidden-anim-l">
+            <div class="bg-gray-100 rounded-xl shadow p-6 hover:shadow-lg transition">
+              <img src="images/member3.jpg" class="mx-auto rounded-full w-44 h-44 object-cover mb-4">
+              <h4 class="text-xl font-semibold text-base">Daniel Salmerón</h4>
+              <p class="text-base-alt">SA212548</p>
+            </div>
+          </div>
+          <div class="card hidden-anim-l">
+            <div class="bg-gray-100 rounded-xl shadow p-6 hover:shadow-lg transition">
+              <img src="" class="mx-auto rounded-full w-44 h-44 object-cover mb-4">
+              <h4 class="text-xl font-semibold text-base">Fernanda Guardado</h4>
+              <p class="text-base-alt">GA220455</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl sm:text-3xl font-semibold text-center text-base mb-10 hidden-anim-l">Contáctanos</h2>
+        <form class="bg-white shadow-md rounded-xl p-6 space-y-6 hidden-anim-l">
+          <div>
+            <label class="block text-sm font-medium text-base">Nombre</label>
+            <input type="text" required
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-base focus:border-base">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-base">Correo electrónico</label>
+            <input type="email" required
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-base focus:border-base">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-base">Mensaje</label>
+            <textarea rows="5" required
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-base focus:border-base"></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="bg-base text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">
+              Enviar mensaje
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div class="relative">
+    <footer class="bg-black text-neutral-300 py-16 px-4">
+      <div class="absolute inset-0 z-0" id="footer-particles"></div>
+      <div class="relative z-10 max-w-7xl mx-auto text-center">
+        <p class="text-sm">&copy; 2025 Tomás Armando Campos. Todos los derechos reservados.</p>
+        <p class="mt-2 text-xs text-neutral-500">Hecho con ❤️ usando inteligencia 101% natural</p>
+      </div>
+    </footer>
+  </div>
+  <button id="scroll-top-btn"
+    class="opacity-0 pointer-events-none fixed bottom-6 right-6 bg-base text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-opacity duration-300 z-50 transition-transform hover:scale-110 cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+      stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
+</body>
+
+</html>
